@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log('create-neon-app');
+require('./dist/cli');

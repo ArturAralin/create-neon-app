@@ -1,0 +1,18 @@
+[package]
+name = "{{project.name}}"
+version = "{{project.version}}"
+authors = ["{{project.author}}"]
+license = "{{project.license}}"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "test_neon"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "{{project.neonBuildVersion}}"
+
+[dependencies]
+neon = "{{project.neonVersion}}"
